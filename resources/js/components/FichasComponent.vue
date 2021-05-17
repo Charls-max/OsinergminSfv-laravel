@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import Select2 from 'select2';
+// import Select2 from 'select2';
 export default{
 props: ['options', 'value'],
 data: function () {

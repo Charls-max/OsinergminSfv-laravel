@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Osinergmin</title>
+
+        <!-- FontAwesome icons -->
+        <script src="https://kit.fontawesome.com/a790fabeaf.js" crossorigin="anonymous"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -12,8 +15,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #eee;
+            /*    color: #636b6f; */
+                color: #114692;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,13 +53,38 @@
             }
 
             .links > a {
-                color: #636b6f;
+                /* color: #636b6f; */
+                color: #000;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
-                letter-spacing: .1rem;
+                letter-spacing: .15rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                position: relative;
+            }
+
+
+            .links > a:hover {
+                color: orange;
+             
+            }           
+
+            .links > a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #114692;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            }
+            .links > a:hover:after { 
+            width: 100%; 
+            left: 0; 
             }
 
             .m-b-md {
@@ -80,19 +109,14 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="title m-b-md" >
+                    Sistema de Supervision de Sistemas Fotovoltaicos Osinergmin
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.osinergmin.gob.pe/SitePages/default.aspx">Website oficial Antiguo</a>
+                    <a href="https://www.gob.pe/osinergmin">Website oficial Nuevo</a>
+                    
                 </div>
             </div>
         </div>

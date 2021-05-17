@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Empresa;
 
@@ -21,6 +22,7 @@ class EmpresaController extends Controller
         //    return view('fichas');
             return view('empresas');
          }
+        
 
     }
 
@@ -50,12 +52,9 @@ class EmpresaController extends Controller
         $empresa->save();
         return $empresa;
 
-        //Insertar imagenes ??
-        if ($request->hasFile('image')) {
-            $path = $request->image->store('public');
-            Image::create(['path'=>$path]);
-        }
-
+        //Insertar imagenes ??  
+        
+        
     }
 
     /**

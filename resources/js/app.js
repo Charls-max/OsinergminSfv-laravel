@@ -12,4 +12,4 @@ const app = new Vue({
     el: '#app',
 });
 
-require('./companies');
+// require('./companies');

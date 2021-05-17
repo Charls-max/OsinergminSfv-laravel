@@ -1,8 +1,5 @@
-@extends('layouts.app')
 @extends('master')
-@section('content')
-@inject('faculties', 'App\Services\Faculties')
-
+@section('seccion')
 
 <div class="container">
     <div class="row justify-content-center">
